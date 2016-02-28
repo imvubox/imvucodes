@@ -54,6 +54,9 @@
   setTimeout(function() {
     document.getElementById('hint').style.visibility = 'visible';
   }, 5000);
+
+  if (("www.imvucodes.net" == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
 </script>
 
 <script>
